@@ -1,0 +1,10 @@
+.short-col {
+    width: 30%;
+}
+.table-header {
+    border-top: 1px solid #D3D3D3;
+    border-bottom: 1px solid #D3D3D3;
+}
+.table-footer {
+    border-bottom: 1px solid #D3D3D3;
+}

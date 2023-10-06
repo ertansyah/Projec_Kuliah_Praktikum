@@ -1,0 +1,121 @@
+@media print {
+    body {
+        display: block;
+        margin: 0;
+        padding: 0;
+        font-size: 12pt;
+        background-color: #fff;
+    }
+
+    .table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    .table td {
+        border: 1px solid #333;
+        padding: 5px;
+    }
+
+    /* Ubah ukuran kertas ke r5 */
+    @page {
+        size: r5;
+    }
+}
+body {
+    display: flex;
+    flex-direction: column; /* Atur perataan konten dalam kolom */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 20px; /* Jarak di bawah logo-container */
+}
+
+.logo {
+    max-height: 85px; /* Memperbesar logo */
+    width: auto;
+    margin-top: -45px; /* Geser logo sedikit ke atas */
+}
+
+.text {
+    font-size: 24px;
+    text-align: center;
+    
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -30px;
+}
+
+.line {
+    width: 120%; /* Mengatur panjang garis */
+    border: 1px solid #333; /* Warna dan ketebalan garis */
+    margin-top: 0px; /* Ruang di atas garis */
+    margin-bottom: 0; /* Hapus ruang di bawah garis */
+    margin-left: -100px;
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10px; /* Ubah jarak kecil di sini */
+    margin-left: -26px;
+    margin-bottom: -100px; /* Atur jarak di bawah tabel */
+    transform: translate(20px, -20px); /* Menggeser tabel ke kanan dan ke atas */
+}
+
+.table {
+    border-collapse: collapse;
+    width: 690px; /* Mengatur panjang tabel */
+}
+
+.table td {
+    border: 1px solid #333; /* Menambahkan border pada sel tabel */
+    padding: 10px; /* Menambahkan ruang padding pada sel tabel */
+}
+.table td:not(:first-child):not(:last-child) {
+    border-left: none;
+    border-right: none;
+}
+.divider {
+    width: 100%;
+    border: 1px solid #333; /* Warna dan ketebalan garis */
+    margin-top: 20px; /* Ruang di atas garis */
+    margin-bottom: 20px; /* Ruang di bawah garis */
+}
+
+.table-header {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+}
+.no-border-top td {
+    border-top: none;
+}
+.no-border-bottom td {
+    border-bottom: none;
+}
+.no-border-bottom-up td{
+    border-top: none;
+    border-bottom: none;
+}
+.short-col {
+    width: 45%;
+}

@@ -1,0 +1,77 @@
+.slide-show {
+    position: fixed;
+    right: 20px;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 999;
+}
+.slide-icon {
+    margin-right: 5px;
+    font-size: 18px; /* Ukuran ikon */
+}
+.slide-button {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #007bff;
+    
+    transition: background-color 0.3s;
+}
+
+/* Mengubah warna latar belakang saat tombol dihover */
+.slide-button:hover .slide-text {
+    background-color: orange;
+}
+
+.slide-text {
+    margin-right: 5px;
+    padding: 3px;
+    background-color: rgba(0, 123, 255, 0.9);
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s; /* Transisi latar belakang saat dihover */
+}
+
+.slide-content {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5); /* Black transparent background for content */
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 250px;
+    max-height: 70vh; /* Batasan tinggi konten */
+    overflow-y: auto; /* Scroll jika melebihi tinggi maksimum */
+    position: absolute; /* Mengubah posisi menjadi absolute */
+    right: 0; /* Memposisikan ke kanan */
+    top: calc(50% + 25px); /* Memposisikan secara vertikal dengan margin dari tombol */
+    z-index: -1;
+    animation: slide 0.5s ease-out forwards;
+}
+
+.card {
+    margin: 0;
+    border: none;
+    box-shadow: none;
+}
+
+.card-body {
+    padding: 10px;
+}
+@keyframes slide-reverse {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+.slide-content iframe {
+    width: 100%; 
+    height: 100%;
+}
+

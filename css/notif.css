@@ -1,0 +1,13 @@
+.notif-success {
+    background-color: #4CAF50; /* Warna hijau untuk notifikasi berhasil */
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.notif-error {
+    background-color: #FF5733; /* Warna merah untuk notifikasi gagal */
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
